@@ -13,4 +13,16 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
 
+  get '/work' do
+    erb :'work/view'
+  end
+
+  get '/resume' do
+    erb :'resume/view'
+  end
+
+  get '/contact' do
+    erb :'contact/view'
+  end
+
 end
